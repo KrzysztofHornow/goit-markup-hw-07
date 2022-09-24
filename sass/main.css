@@ -1,0 +1,21 @@
+@import "./utils/colors";
+@import "./utils/resets";
+@import "./utils/fonts";
+@import "./utils/mixins";
+@import "./components/header";
+@import "./components/footer";
+@import "./components/index-main";
+@import "./components/portfolio-main";
+@import "./components/modal";
+
+body {
+  font-family: "Roboto", "Releway", sans-serif;
+  background-color: $primary-color;
+  color: $primary-text;
+  font-size: map-get($font-size, standard);
+  letter-spacing: map-get($letter-spacing, standard);
+}
+.container {
+  width: 1200px;
+  @include center;
+}
